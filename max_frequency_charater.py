@@ -1,10 +1,11 @@
 text=input("Enter the string: ")
-frequency={}
+frequency={}  #create dictonary
 for ch in text:
     if ch in frequency:
         frequency[ch]+=1
     else:
         frequency[ch]=1
+print(frequency)
 max_char=""
 max_count=0
 for ch in frequency:
